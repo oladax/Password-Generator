@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./password.css" />
+    <title>Password-Generator</title>
+  </head>
+  <body>
+    <!--the main-->
+    <div class="main">
+      <!--Password Generator-->
+      <h1>P<span>a</span>ssword Gener<span>a</span>tor</h1>
+
+      <!--Password Innertext-->
+      <div class="btn_div">
+        <div class="password" id="PASSWORD">htudyvspkvocly</div>
+      </div>
+
+      <!--container div holding all-->
+      <div>
+        <!--RANGE AND CHECKBOX CONTAINER-->
+
+        <div class="number-div">
+          <label for="Characters">Number of Characters</label>
+          <input
+            class="range"
+            type="range"
+            min="2"
+            max="25"
+            id="RANGE"
+            value="14"
+          />
+          <input
+            class="number"
+            type="number"
+            min="2"
+            max="25"
+            value="14"
+            id="CHARACTER"
+          />
+        </div>
+
+        <!--DIVS-->
+        <div class="divs">
+          <label for="Number">Include Numbers</label>
+          <input type="checkbox" name="" id="NUMBER" />
+        </div>
+        <div class="divs">
+          <label for="Uppercase">Include Symbols</label>
+          <input type="checkbox" name="" id="UPPERCASE" />
+        </div>
+        <div class="divs">
+          <label for="Symbols">Include Uppercase</label>
+          <input type="checkbox" name="" id="SYMBOLS" />
+        </div>
+
+        <!-- btns for generating and deleting pass-->
+
+        <div class="btn-div">
+          <button onclick="generatepasswordbtn();">Generate Password</button>
+        </div>
+        <div class="btn-div"><button onclick="COPY();">Delete</button></div>
+      </div>
+    </div>
+    <script src="./password.js"></script>
+  </body>
+</html>
